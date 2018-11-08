@@ -13,7 +13,7 @@ class UrlModel(models.Model):
     # expiration_date = models.DateField()
     # user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     hits = models.IntegerField(default=0)
-    encrypted_url = models.CharField(max_length=200, null=True, blank=True,unique=True)
+    encrypted_url = models.CharField(max_length=200, null=True, blank=True, unique=True)
 
     def __str__(self):
         return self.original_url
